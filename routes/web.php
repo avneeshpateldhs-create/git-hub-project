@@ -13,3 +13,7 @@ Route::get('/git-practice', function () {
 Route::get('/git-status', function () {
     return 'My feature branch is working!';
 });
+
+Route::get('/dummy', function () {
+    return 'This is a dummy route';
+});
