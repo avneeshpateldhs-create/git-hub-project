@@ -17,3 +17,14 @@ Route::get('/git-status', function () {
 Route::get('/dummy', function () {
     return 'This is a dummy route';
 });
+
+Route::get('/dummy-api', function () {
+    return response()->json([
+        'status' => true,
+        'message' => 'Dummy API working',
+        'data' => [
+            'id' => 1,
+            'name' => 'Test User'
+        ]
+    ]);
+});
